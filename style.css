@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+    --Pale-blue:hsl(225, 100%, 94%);
+    --Bright-blue:hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --weight-1:500;
+    --weight-2:700;
+    --weight-3:900;
+}
+
+
+*{
+    padding: 0;margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--Pale-blue);
+
+}
+.container{
+    width: 400px;
+    text-align: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    line-height: 2;
+    background-color: white;
+}
+.hero{
+    width: 100%;
+}
+.text{
+    line-height: 1;
+
+}
+.text h2{
+    font-weight: var(--weight-3);
+    color: var(--Dark-blue);
+    padding: 10px 0;
+}
+.text p{
+    color: var(--Desaturated-blue);
+    font-weight: var(--weight-1);
+    font-size: 1rem;
+    line-height: 2;
+}
+.change{
+    background-color: var(--Very-pale-blue);
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.change-txt{
+    line-height: 1.5;
+    margin-left: -2rem;
+}
+.annual{
+    color: var(--Dark-blue);
+    font-weight: var(--weight-2);
+}
+.price{
+    color: var(--Desaturated-blue);
+    font-weight: var(--weight-1);
+}
+a{
+    font-weight: var(--weight-2);
+}
+a:hover{
+    text-decoration: none;
+    color: var(--Bright-blue);
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+button{
+    padding: 1rem;
+    cursor: pointer;
+}
+.btn-pro{
+    background-color: var(--Bright-blue);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: var(--weight-2);
+}
+.btn-pro:hover{
+    background-color: hsl(245, 100%, 76%);
+}
+.btn-cancel{
+    text-decoration: none;
+    font-weight: var(--weight-2);
+    color: var(--Dark-blue);
+    margin-top: 10px;
+}
+
+@media screen and (max-width:375px) {
+    .container{
+        width: 350px;
+
+    }
+    
+}
+
+
